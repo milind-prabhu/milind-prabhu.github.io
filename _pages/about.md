@@ -7,4 +7,4 @@ redirect_from:
   - /about.html
 ---
 
-This is my homepage!
+This is my new website!
