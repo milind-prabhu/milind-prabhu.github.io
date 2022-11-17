@@ -7,4 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a first year Ph.D. student at the University of Michigan, Ann Arbor advised by Nikhil Bansal.  I am interested in algorithms and discrete math. I have spent some time thinking about problems in streaming algorithms, query complexity, discrepancy theory and clustering.
+#Bio
+I am a first year Ph.D. student at the University of Michigan, Ann Arbor advised by Nikhil Bansal.  I am interested in algorithms and discrete math. I have spent some time thinking about problems in streaming algorithms, query complexity, discrepancy theory and clustering. Before coming to Ann Arbor, I completed my B.Tech. in Computer Science and Engineering at the Indian Institute of Technology, Guwahati.
+
+
