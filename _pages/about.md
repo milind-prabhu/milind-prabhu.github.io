@@ -7,4 +7,4 @@ redirect_from:
   - /about.html
 ---
 
-This is my new website!
+I am first year Ph.D. student at the University of Michigan advised by Nikhil Bansal.  I am interested in algorithms and discrete math. I have spent some time thinking about problems in streaming algorithms, query complexity, discrepancy and clustering.
