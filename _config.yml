@@ -102,9 +102,9 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : "custom"
   google:
-    tracking_id          :G-ZLM281HVP7
+    tracking_id          :
 
 
 # Site Author
