@@ -11,4 +11,6 @@ I am a third-year Ph.D. student at the [University of Michigan, Ann Arbor](https
 
 My journey in TCS began when I attended [PACT](https://algorithmicthinking.org/) 2019, a program conducted by [Rajiv Gandhi](https://crab.rutgers.edu/users/rajivg/) to introduce high-school and undergraduate students to TCS. As an undergrad, I was extremely fortunate to spend time working during various summers with [Sepehr Assadi](https://sepehr.assadi.info/), [David Woodruff](https://www.cs.cmu.edu/~dwoodruf/), and my undergrad advisor, [Benny George Kenkireth](https://www.iitg.ac.in/ben/). 
 
+Here is a link to my [CV](https://milind-prabhu.github.io/files/resume.pdf).
+
 
