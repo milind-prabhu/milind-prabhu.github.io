@@ -1,8 +1,9 @@
 ---
 title: "Generalizing Greenwald-Khanna Streaming Quantile Summaries for
-Weighted Inputs\ With Sepehr Assadi, Nirmit Joshi, Vihan Shah"
+Weighted Inputs"
 collection: publications
 venue: 'ICDT'
+authors: Sepehr Assadi, Nirmit Joshi, Vihan Shah
 date: 2023-03-01
 paperurl: 'https://arxiv.org/pdf/2303.06288'
 ---
