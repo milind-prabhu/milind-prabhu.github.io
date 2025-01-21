@@ -3,6 +3,7 @@ title: "Sensitivity Sampling for k-Means: Worst Case and Stability Optimal Cores
 collection: publications
 venue: 'FOCS'
 date: 2024-05-01
+authors: Nikhil Bansal, Vincent Cohen-Addad, David Saulpic, Chris Schwiegelshohn
 paperurl: 'https://arxiv.org/pdf/2405.01339'
 ---
 
