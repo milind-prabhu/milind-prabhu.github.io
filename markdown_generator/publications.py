@@ -80,7 +80,7 @@ for row, item in publications.iterrows():
         md += "\nexcerpt: '" + html_escape(item.excerpt) + "'"
     
     #md += "\ndate: " + str(item.pub_date) 
-    
+    md +="\nauthors: " + html_escape(item.authors)
     md += "\nvenue: '" + html_escape(item.venue) + "'"
     
     if len(str(item.paper_url)) > 5:
