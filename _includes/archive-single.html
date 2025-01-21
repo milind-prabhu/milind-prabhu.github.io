@@ -26,20 +26,7 @@
       </div>
     {% endif %}
 
-    <h2 class="archive__item-title" itemprop="headline"> {% if post.collection == 'publications' %} {{ title }} {% elsif post.link %} {% for post in site.publications %}
-  <li>
-    <strong>{{ post.title }}</strong> <!-- Paper Title -->
-    <br>
-    <span>{{ post.authors }}</span> <!-- Authors -->
-    <br>
-    <em>{{ post.venue }}</em> <!-- Conference -->
-    {% if post.arxiv %}
-      <br>
-      <a href="{{ post.arxiv }}" target="_blank">arXiv Link</a> <!-- ArXiv Link -->
-    {% endif %}
-  </li>
-{% endfor %}
- </h2>
+    <h2 class="archive__item-title" itemprop="headline"> {% if post.collection == 'publications' %} {{ title }} {% elsif post.link %}  <span>{{ post.authors }}</span> <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a> {% else %} <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a> {% endif %} </h2>
 
 
     
