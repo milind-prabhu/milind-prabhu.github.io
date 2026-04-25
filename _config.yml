@@ -14,9 +14,9 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Milind B. Prabhu"
+title                    : "Milind Prabhu"
 title_separator          : "-"
-name                     : &name "Milind B. Prabhu"
+name                     : &name "Milind Prabhu"
 description              : &description "C.S. Theory Ph.D. Student at University of Michigan"
 url                      : https://milind-prabhu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -109,7 +109,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Milind B. Prabhu"
+  name             : "Milind Prabhu"
   avatar           : "milind.png"
   bio              : "Ph.D. Student, UMich"
   location         : "Ann Arbor, Michigan"
