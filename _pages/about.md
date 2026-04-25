@@ -65,14 +65,14 @@ redirect_from:
       <li><a href="https://sepehr.assadi.info/">Sepehr Assadi</a></li>
       <li><a href="https://dblp.org/pid/286/1893.html">Nikhil Ayyadevara</a></li>
       <li><a href="https://bansal.engin.umich.edu/">Nikhil Bansal</a></li>
-      <li><a href="https://simons.berkeley.edu/people/vincent-cohen-addad">Vincent Cohen-Addad</a></li>
+      <li><a href="https://www.di.ens.fr/~vcohen/">Vincent Cohen-Addad</a></li>
       <li><a href="https://nirmitj6.github.io/static-webpage/">Nirmit Joshi</a></li>
       <li><a href="https://www.normalesup.org/~saulpic/">David Saulpic</a></li>
-      <li><a href="https://dblp.org/pid/48/7183">Chris Schwiegelshohn</a></li>
+      <li><a href="https://cs.au.dk/~schwiegelshohn/">Chris Schwiegelshohn</a></li>
       <li><a href="https://vihanshah72.github.io/">Vihan Shah</a></li>
       <li><a href="https://faculty.cc.gatech.edu/~ssingla7/">Sahil Singla</a></li>
       <li><a href="https://aco.gatech.edu/users/siddharth-sundaram">Siddharth M. Sundaram</a></li>
-      <li><a href="https://www.csd.cmu.edu/people/faculty/david-woodruff">David Woodruff</a></li>
+      <li><a href="https://www.cs.cmu.edu/~dwoodruf/">David Woodruff</a></li>
     </ul>
   </section>
 </div>
