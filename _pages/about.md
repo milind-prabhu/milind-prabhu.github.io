@@ -56,10 +56,6 @@ redirect_from:
                 <a class="pub-link" href="{{ post.paperurl }}">Paper</a>
               {% endif %}
             </div>
-            <details class="pub-summary">
-              <summary>Summary</summary>
-              <p>This is a placeholder summary for now. It can become a short plain-English description of the main question, idea, and takeaway of the paper.</p>
-            </details>
           </article>
         {% endfor %}
       </div>
