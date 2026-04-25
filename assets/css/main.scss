@@ -285,7 +285,7 @@ body:has(.single-page-home) #site-nav {
 }
 
 .pub-card:hover .pub-card__title,
-pub-card:focus-within .pub-card__title {
+.pub-card:focus-within .pub-card__title {
   color: var(--home-heading);
 }
 
