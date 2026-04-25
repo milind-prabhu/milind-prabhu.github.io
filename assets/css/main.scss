@@ -208,7 +208,7 @@ body:has(.single-page-home) #site-nav {
 .home-main {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 235px;
-  gap: 1.5rem;
+  gap: 2.4rem;
   align-items: start;
   margin-top: 2rem;
 }
@@ -278,8 +278,10 @@ body:has(.single-page-home) #site-nav {
 }
 
 .collaborators-panel {
+  justify-self: end;
+  margin-top: 2.35rem;
   padding: 0.85rem;
-  border: 1px solid var(--home-panel-border);
+  border: 0;
   border-radius: 8px;
   background: var(--home-panel-bg);
 }
@@ -318,6 +320,11 @@ body:has(.single-page-home) #site-nav {
   .home-main {
     grid-template-columns: 1fr;
     gap: 1.75rem;
+  }
+
+  .collaborators-panel {
+    justify-self: stretch;
+    margin-top: 0;
   }
 }
 
