@@ -10,11 +10,15 @@ redirect_from:
 
 <div class="single-page-home">
   <header class="hero" id="top">
-    <p class="hero__kicker">University of Michigan</p>
-    <h1>Milind B. Prabhu</h1>
-    <p class="hero__subtitle">Ph.D. student in Computer Science</p>
-    <p class="hero__meta">Advised by Nikhil Bansal</p>
-    <p class="hero__interests">Research interests: online algorithms, approximation algorithms</p>
+    <div class="hero__layout">
+      <div class="hero__content">
+        <h1>Milind B. Prabhu</h1>
+        <p class="hero__subtitle">Ph.D. student in Computer Science</p>
+        <p class="hero__meta">Advised by Nikhil Bansal</p>
+        <p class="hero__interests">Research interests: online algorithms, approximation algorithms</p>
+      </div>
+      <img class="hero__photo" src="{{ '/images/profile.jpg' | relative_url }}" alt="Portrait of Milind B. Prabhu" loading="lazy">
+    </div>
 
     <nav class="hero__nav" aria-label="Section navigation">
       <a href="#publications">Publications</a>
@@ -35,15 +39,14 @@ redirect_from:
           {% if post.citation %}
             <p class="pub-card__authors">{{ post.citation }}</p>
           {% endif %}
-          <p class="pub-card__links">
+          <div class="pub-card__actions">
             {% if post.paperurl %}
-              <a href="{{ post.paperurl }}">Paper</a>
+              <a class="card-btn" href="{{ post.paperurl }}">Read Paper</a>
             {% endif %}
             {% if post.url %}
-              <a href="{{ post.url | relative_url }}">Details</a>
+              <a class="card-btn card-btn--secondary" href="{{ post.url | relative_url }}">More Details</a>
             {% endif %}
-          </p>
-          <p class="pub-card__tldr">TL;DR: TODO</p>
+          </div>
         </article>
       {% endfor %}
     </div>
@@ -53,8 +56,6 @@ redirect_from:
     <h2>Teaching</h2>
     {% if site.teaching and site.teaching.size > 0 %}
       <p class="section-note">Teaching content exists and will be consolidated into this section soon.</p>
-    {% else %}
-      <!-- TODO: Add teaching details when available. -->
     {% endif %}
   </section>
 
