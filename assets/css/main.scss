@@ -79,9 +79,9 @@ body {
 
 .single-page-home {
   color: var(--home-text);
-  max-width: 960px;
+  max-width: min(1180px, calc(100vw - 4rem));
   margin: 0 auto;
-  padding: 2rem 1rem 4rem;
+  padding: 2rem 0 4rem;
   position: relative;
 }
 
@@ -199,8 +199,8 @@ body {
 
 .home-main {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 260px;
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) 235px;
+  gap: 1.5rem;
   align-items: start;
   margin-top: 2rem;
 }
@@ -270,7 +270,7 @@ body {
 }
 
 .collaborators-panel {
-  padding: 1rem;
+  padding: 0.85rem;
   border: 1px solid var(--home-panel-border);
   border-radius: 8px;
   background: var(--home-panel-bg);
@@ -291,7 +291,7 @@ body {
 
 .collaborators-list a {
   color: var(--home-link);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   text-decoration: none;
 }
 
@@ -302,7 +302,9 @@ body {
 
 @media (max-width: 760px) {
   .single-page-home {
-    max-width: 860px;
+    max-width: calc(100vw - 2rem);
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .home-main {
