@@ -24,7 +24,7 @@ redirect_from:
   <header class="hero" id="top">
     <div class="hero__layout">
       <div class="hero__content">
-        <h1>Milind B. Prabhu</h1>
+        <h1>Milind Prabhu</h1>
         <p class="hero__subtitle">Ph.D. student in Computer Science</p>
         <p class="hero__email">"first name" + "pr@umich.edu"</p>
         <p class="hero__meta">Advised by Nikhil Bansal</p>
@@ -34,7 +34,7 @@ redirect_from:
           <a href="{{ site.author.googlescholar }}">Google Scholar</a>
         </nav>
       </div>
-      <img class="hero__photo" src="{{ '/images/milind.png' | relative_url }}" alt="Portrait of Milind B. Prabhu" loading="lazy">
+      <img class="hero__photo" src="{{ '/images/milind.png' | relative_url }}" alt="Portrait of Milind Prabhu" loading="lazy">
     </div>
   </header>
 
