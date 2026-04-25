@@ -45,9 +45,9 @@ html {
 
 .single-page-home {
   color: #ece7dd;
-  max-width: 980px;
+  max-width: 860px;
   margin: 0 auto;
-  padding: 1.5rem 0.75rem 4rem;
+  padding: 2rem 1rem 4rem;
   position: relative;
 }
 
@@ -57,37 +57,28 @@ html {
   inset: 0;
   pointer-events: none;
   z-index: -1;
-  background-color: #1d2126;
-  background-image:
-    linear-gradient(rgba(139, 147, 161, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(139, 147, 161, 0.08) 1px, transparent 1px),
-    radial-gradient(circle at 20% 20%, rgba(113, 214, 255, 0.07), transparent 45%),
-    radial-gradient(circle at 80% 10%, rgba(156, 113, 255, 0.08), transparent 38%);
-  background-size: 28px 28px, 28px 28px, 100% 100%, 100% 100%;
+  background: #1d2126;
 }
 
 .hero {
-  border: 1px solid rgba(213, 221, 237, 0.18);
-  border-radius: 12px;
-  padding: 1.35rem 1.1rem;
-  background: rgba(31, 35, 42, 0.84);
-  backdrop-filter: blur(1px);
+  padding: 0 0 1.35rem;
+  border-bottom: 1px solid rgba(213, 221, 237, 0.14);
 }
 
 .hero__layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 112px;
-  gap: 1.25rem;
+  grid-template-columns: minmax(0, 1fr) 84px;
+  gap: 1.5rem;
   align-items: start;
 }
 
 .hero__photo {
   justify-self: end;
-  width: 112px;
-  height: 112px;
+  width: 84px;
+  height: 84px;
   border-radius: 8px;
   object-fit: cover;
-  border: 1px solid rgba(213, 221, 237, 0.22);
+  border: 1px solid rgba(213, 221, 237, 0.18);
 }
 
 .hero__kicker,
@@ -100,61 +91,51 @@ html {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(2rem, 6vw, 3rem);
+  font-size: 2.25rem;
   color: #f6f1e8;
+  letter-spacing: 0;
 }
 
 .hero__subtitle {
-  margin: 0.35rem 0;
-  font-size: 1.15rem;
+  margin: 0.3rem 0 0;
+  font-size: 1rem;
 }
 
 .hero__email {
-  margin: 0.25rem 0 0.5rem;
-  font-size: 0.98rem;
+  margin: 0.25rem 0 0.65rem;
+  color: #c9ced9;
+  font-size: 0.95rem;
 }
 
-.hero__email a {
+.hero__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 0.85rem;
+}
+
+.hero__links a,
+.pub-link {
   color: #71d6ff;
+  font-size: 0.9rem;
   text-decoration: none;
 }
 
-.hero__email a:hover,
-.hero__email a:focus {
+.hero__links a:hover,
+.hero__links a:focus,
+.pub-link:hover,
+.pub-link:focus {
   text-decoration: underline;
 }
 
-.hero__nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  margin-top: 1rem;
-}
-
-.hero__nav a {
-  display: inline-block;
-  padding: 0.25rem 0.65rem;
-  border: 1px solid rgba(113, 214, 255, 0.45);
-  border-radius: 6px;
-  color: #dff6ff;
-  font-size: 0.86rem;
-  text-decoration: none;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
-}
-
-.hero__nav a:hover,
-.hero__nav a:focus {
-  background: rgba(113, 214, 255, 0.12);
-  border-color: rgba(113, 214, 255, 0.85);
-}
-
 .home-section {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .home-section h2 {
   color: #f6f1e8;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.25rem;
 }
 
 .pub-list {
@@ -164,15 +145,13 @@ html {
 }
 
 .pub-card {
-  border: 1px solid rgba(213, 221, 237, 0.17);
-  border-radius: 8px;
-  padding: 0.7rem 0.8rem;
-  background: rgba(31, 35, 42, 0.72);
+  padding: 0 0 0.75rem;
+  border-bottom: 1px solid rgba(213, 221, 237, 0.12);
 }
 
 .pub-card__title {
-  margin: 0.35rem 0 0.5rem;
-  font-size: 1.02rem;
+  margin: 0.25rem 0 0.35rem;
+  font-size: 1rem;
   line-height: 1.35;
 }
 
@@ -185,15 +164,8 @@ html {
 .pub-card__actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
-  margin-top: 0.65rem;
-}
-
-.pub-card__actions .card-btn {
-  padding: 0.22rem 0.55rem;
-  border-radius: 5px;
-  font-size: 0.78rem;
-  line-height: 1.3;
+  gap: 0.75rem;
+  margin-top: 0.45rem;
 }
 
 .pub-card__links {
@@ -204,15 +176,13 @@ html {
 }
 
 .pub-card__links a,
-.inline-link,
-.contact-links a {
+.inline-link {
   color: #71d6ff;
   text-decoration: none;
 }
 
 .pub-card__links a:hover,
-.inline-link:hover,
-.contact-links a:hover {
+.inline-link:hover {
   text-decoration: underline;
 }
 
@@ -222,35 +192,26 @@ html {
   font-size: 0.92rem;
 }
 
-.contact-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.9rem;
-}
-
 @media (max-width: 640px) {
   .single-page-home {
-    padding-top: 0.5rem;
+    padding-top: 1rem;
   }
 
-  .hero {
-    padding: 1.35rem 1rem;
+  .hero h1 {
+    font-size: 1.85rem;
   }
 
   .hero__layout {
-    grid-template-columns: minmax(0, 1fr) 82px;
+    grid-template-columns: minmax(0, 1fr) 64px;
     gap: 0.85rem;
   }
 
   .hero__photo {
-    width: 82px;
-    height: 82px;
+    width: 64px;
+    height: 64px;
   }
 
   .pub-card {
-    padding: 0.9rem;
+    padding-bottom: 0.8rem;
   }
 }
