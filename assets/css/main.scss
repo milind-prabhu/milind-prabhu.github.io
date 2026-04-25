@@ -87,7 +87,7 @@ body:has(.single-page-home) #site-nav {
 
 .single-page-home {
   color: var(--home-text);
-  max-width: min(1180px, calc(100vw - 4rem));
+  max-width: min(1260px, calc(100vw - 4rem));
   margin: 0 auto;
   padding: 2rem 0 4rem;
   position: relative;
@@ -222,8 +222,8 @@ body:has(.single-page-home) #site-nav {
 
 .home-main {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 235px;
-  gap: 2.4rem;
+  grid-template-columns: minmax(0, 1fr) 245px;
+  gap: 3.25rem;
   align-items: start;
   margin-top: 2rem;
 }
@@ -294,8 +294,8 @@ body:has(.single-page-home) #site-nav {
 
 .collaborators-panel {
   justify-self: end;
-  margin-top: 2.35rem;
-  padding: 0.85rem;
+  margin-top: 0;
+  padding: 0 0.85rem 0.85rem;
   border: 0;
   border-radius: 8px;
   background: var(--home-panel-bg);
@@ -340,6 +340,7 @@ body:has(.single-page-home) #site-nav {
   .collaborators-panel {
     justify-self: stretch;
     margin-top: 0;
+    padding-top: 0;
   }
 }
 
