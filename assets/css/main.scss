@@ -106,11 +106,11 @@ body:has(.single-page-home) #site-nav {
 .single-page-home a:hover,
 .single-page-home a:focus,
 .single-page-home a:visited {
-  color: var(--home-link);
-  text-decoration: none;
-  background-image: none;
-  box-shadow: none;
-  border-bottom: 0;
+  color: var(--home-link) !important;
+  text-decoration: none !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border-bottom: 0 !important;
 }
 
 .theme-toggle {
@@ -192,10 +192,10 @@ body:has(.single-page-home) #site-nav {
 .hero__subtitle .plain-link,
 .hero__subtitle .plain-link:hover,
 .hero__subtitle .plain-link:focus {
-  color: var(--home-link);
-  text-decoration: none;
-  background-image: none;
-  box-shadow: none;
+  color: var(--home-link) !important;
+  text-decoration: none !important;
+  background-image: none !important;
+  box-shadow: none !important;
 }
 
 .hero__email {
@@ -213,9 +213,9 @@ body:has(.single-page-home) #site-nav {
 
 .hero__links a,
 .pub-link {
-  color: var(--home-link);
+  color: var(--home-link) !important;
   font-size: 0.9rem;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .home-main {
@@ -278,8 +278,8 @@ body:has(.single-page-home) #site-nav {
 
 .pub-card__links a,
 .inline-link {
-  color: var(--home-link);
-  text-decoration: none;
+  color: var(--home-link) !important;
+  text-decoration: none !important;
 }
 
 .pub-card__tldr {
@@ -321,9 +321,9 @@ body:has(.single-page-home) #site-nav {
 }
 
 .collaborators-list a {
-  color: var(--home-link);
+  color: var(--home-link) !important;
   font-size: 0.9rem;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 @media (max-width: 760px) {
