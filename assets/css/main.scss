@@ -75,6 +75,14 @@ html {
 
 body {
   background: var(--home-bg);
+  border-top: 0;
+}
+
+body:has(.single-page-home) .masthead,
+body:has(.single-page-home) .greedy-nav,
+body:has(.single-page-home) #site-nav {
+  display: none;
+  border: 0;
 }
 
 .single-page-home {
