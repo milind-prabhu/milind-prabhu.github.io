@@ -8,7 +8,19 @@ redirect_from:
   - /about.html
 ---
 
+<script>
+  (function () {
+    var savedTheme = localStorage.getItem("site-theme");
+    var prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+    document.documentElement.setAttribute("data-theme", savedTheme || (prefersLight ? "light" : "dark"));
+  })();
+</script>
+
 <div class="single-page-home">
+  <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+    Light
+  </button>
+
   <header class="hero" id="top">
     <div class="hero__layout">
       <div class="hero__content">
@@ -47,3 +59,29 @@ redirect_from:
     </div>
   </section>
 </div>
+
+<script>
+  (function () {
+    var button = document.querySelector(".theme-toggle");
+
+    if (!button) {
+      return;
+    }
+
+    function setTheme(theme) {
+      var isLight = theme === "light";
+      document.documentElement.setAttribute("data-theme", theme);
+      localStorage.setItem("site-theme", theme);
+      button.textContent = isLight ? "Dark" : "Light";
+      button.setAttribute("aria-label", isLight ? "Switch to dark mode" : "Switch to light mode");
+      button.setAttribute("aria-pressed", isLight ? "true" : "false");
+    }
+
+    setTheme(document.documentElement.getAttribute("data-theme") || "dark");
+
+    button.addEventListener("click", function () {
+      var currentTheme = document.documentElement.getAttribute("data-theme") || "dark";
+      setTheme(currentTheme === "light" ? "dark" : "light");
+    });
+  })();
+</script>
