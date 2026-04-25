@@ -234,8 +234,11 @@ body:has(.single-page-home) #site-nav {
 
 .home-section h2 {
   color: var(--home-heading);
-  margin-bottom: 0.9rem;
+  margin: 0 0 0.9rem;
+  padding: 0;
+  border: 0;
   font-size: 1.25rem;
+  line-height: 1.25;
 }
 
 .pub-list {
@@ -302,7 +305,11 @@ body:has(.single-page-home) #site-nav {
 }
 
 .collaborators-panel h2 {
-  margin-top: 0;
+  margin: 0 0 0.9rem;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  background-image: none;
 }
 
 .collaborators-list {
