@@ -26,10 +26,10 @@ redirect_from:
       <div class="hero__content">
         <h1>Milind Prabhu</h1>
         <p class="hero__subtitle">PhD student @ <a class="plain-link" href="https://theory.engin.umich.edu/">UMich Theory Lab</a></p>
-        <p class="hero__email">"first name" + "pr@umich.edu"</p>
         <p class="hero__interests">I like thinking about online and approximation algorithms.</p>
-        <p class="hero__meta hero__contact">Feel free to reach out to me if you would like to chat!</p>
         <p class="hero__meta">I am fortunate to be advised by <a href="https://bansal.engin.umich.edu/">Nikhil Bansal</a>.</p>
+        <p class="hero__meta hero__contact">Feel free to reach out to me if you would like to chat!</p>
+        <p class="hero__email">"first name" + "pr@umich.edu"</p>
         <nav class="hero__links" aria-label="Profile links">
           <a href="{{ '/files/resume.pdf' | relative_url }}">CV</a>
           <a href="{{ site.author.googlescholar }}">Google Scholar</a>
