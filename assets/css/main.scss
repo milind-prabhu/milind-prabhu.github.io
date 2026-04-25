@@ -95,14 +95,29 @@ body {
   top: 1rem;
   right: 1rem;
   z-index: 20;
-  padding: 0.25rem 0.55rem;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
   border: 1px solid var(--home-toggle-border);
-  border-radius: 6px;
+  border-radius: 50%;
   background: var(--home-toggle-bg);
   color: var(--home-text);
-  font-size: 0.8rem;
-  line-height: 1.2;
+  font-size: 1rem;
+  line-height: 1;
   cursor: pointer;
+}
+
+.theme-toggle__icon {
+  display: block;
+  filter: grayscale(1);
+  opacity: 0.45;
+  transform: scale(0.95);
+}
+
+.theme-toggle[aria-pressed="true"] .theme-toggle__icon {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 .theme-toggle:hover,
