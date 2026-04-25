@@ -17,7 +17,7 @@ redirect_from:
         <p class="hero__meta">Advised by Nikhil Bansal</p>
         <p class="hero__interests">Research interests: online algorithms, approximation algorithms</p>
       </div>
-      <img class="hero__photo" src="{{ '/images/profile.jpg' | relative_url }}" alt="Portrait of Milind B. Prabhu" loading="lazy">
+      <img class="hero__photo" src="{{ '/images/milind.png' | relative_url }}" alt="Portrait of Milind B. Prabhu" loading="lazy">
     </div>
 
     <nav class="hero__nav" aria-label="Section navigation">
