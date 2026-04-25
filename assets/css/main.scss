@@ -119,8 +119,8 @@ body {
 }
 
 .theme-toggle[aria-pressed="true"] .theme-toggle__icon {
-  filter: none;
-  opacity: 1;
+  filter: grayscale(1) brightness(0.15);
+  opacity: 0.9;
   transform: scale(1.05);
 }
 
