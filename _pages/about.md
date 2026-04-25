@@ -1,14 +1,84 @@
 ---
 permalink: /
-excerpt: 
-author_profile: true
-redirect_from: 
+excerpt:
+author_profile: false
+classes: wide
+redirect_from:
   - /about/
   - /about.html
 ---
-I am a fourth-year Ph.D. student at the [University of Michigan, Ann Arbor](https://theory.engin.umich.edu/) advised by [Nikhil Bansal](https://bansal.engin.umich.edu/).  I work in theoretical computer science and discrete math. I enjoy thinking about problems in approximation algorithms, streaming, etc.  Before coming to Ann Arbor, I completed my B. Tech. in Computer Science and Engineering at the [Indian Institute of Technology, Guwahati](https://www.iitg.ac.in/cse/). 
 
+<div class="single-page-home">
+  <header class="hero" id="top">
+    <p class="hero__kicker">University of Michigan</p>
+    <h1>Milind B. Prabhu</h1>
+    <p class="hero__subtitle">Ph.D. student in Computer Science</p>
+    <p class="hero__meta">Advised by Nikhil Bansal</p>
+    <p class="hero__interests">Research interests: online algorithms, approximation algorithms</p>
 
-My journey in TCS began when I attended [PACT](https://algorithmicthinking.org/) 2019, a program conducted by [Rajiv Gandhi](https://crab.rutgers.edu/users/rajivg/) to introduce high-school and undergraduate students to TCS. As an undergrad, I was extremely fortunate to spend time working during various summers with [Sepehr Assadi](https://sepehr.assadi.info/), [David Woodruff](https://www.cs.cmu.edu/~dwoodruf/), and my undergrad advisor, [Benny George Kenkireth](https://www.iitg.ac.in/ben/). 
+    <nav class="hero__nav" aria-label="Section navigation">
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-Here is a link to my [CV](https://milind-prabhu.github.io/files/resume.pdf) (last updated in March 2025).
+  <section id="publications" class="home-section">
+    <h2>Publications</h2>
+    <div class="pub-grid">
+      {% assign pubs = site.publications | sort: 'date' | reverse %}
+      {% for post in pubs %}
+        <article class="pub-card">
+          <p class="pub-card__meta">{{ post.venue }} · {{ post.date | date: "%Y" }}</p>
+          <h3 class="pub-card__title">{{ post.title }}</h3>
+          {% if post.citation %}
+            <p class="pub-card__authors">{{ post.citation }}</p>
+          {% endif %}
+          <p class="pub-card__links">
+            {% if post.paperurl %}
+              <a href="{{ post.paperurl }}">Paper</a>
+            {% endif %}
+            {% if post.url %}
+              <a href="{{ post.url | relative_url }}">Details</a>
+            {% endif %}
+          </p>
+          <p class="pub-card__tldr">TL;DR: TODO</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="teaching" class="home-section">
+    <h2>Teaching</h2>
+    {% if site.teaching and site.teaching.size > 0 %}
+      <p class="section-note">Teaching content exists and will be consolidated into this section soon.</p>
+    {% else %}
+      <!-- TODO: Add teaching details when available. -->
+    {% endif %}
+  </section>
+
+  <section id="cv" class="home-section">
+    <h2>CV</h2>
+    <p><a class="inline-link" href="{{ '/files/resume.pdf' | relative_url }}">View CV (PDF)</a></p>
+  </section>
+
+  <section id="contact" class="home-section">
+    <h2>Contact</h2>
+    <p>Email: {{ site.author.email }}</p>
+    <ul class="contact-links">
+      {% if site.author.googlescholar %}
+        <li><a href="{{ site.author.googlescholar }}">Google Scholar</a></li>
+      {% endif %}
+      {% if site.author.linkedin %}
+        <li><a href="{{ site.author.linkedin }}">LinkedIn</a></li>
+      {% endif %}
+      {% if site.author.github %}
+        <li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
+      {% endif %}
+      {% if site.author.orcid %}
+        <li><a href="{{ site.author.orcid }}">ORCID</a></li>
+      {% endif %}
+    </ul>
+  </section>
+</div>
