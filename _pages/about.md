@@ -61,7 +61,7 @@ redirect_from:
     </section>
 
     <aside id="collaborators" class="home-section collaborators-panel">
-      <h2>People I've Worked With!</h2>
+      <h2>Shoutout to My Collaborators!</h2>
       <div class="collaborators-box">
         <ul class="collaborators-list">
           <li><a href="https://sepehr.assadi.info/">Sepehr Assadi</a></li>
