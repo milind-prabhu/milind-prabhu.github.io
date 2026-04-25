@@ -41,9 +41,6 @@ redirect_from:
             {% if post.paperurl %}
               <a class="pub-link" href="{{ post.paperurl }}">Paper</a>
             {% endif %}
-            {% if post.url %}
-              <a class="pub-link" href="{{ post.url | relative_url }}">Details</a>
-            {% endif %}
           </div>
         </article>
       {% endfor %}
