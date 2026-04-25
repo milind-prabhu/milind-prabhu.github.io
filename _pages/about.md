@@ -14,6 +14,7 @@ redirect_from:
       <div class="hero__content">
         <h1>Milind B. Prabhu</h1>
         <p class="hero__subtitle">Ph.D. student in Computer Science</p>
+        <p class="hero__email"><a href="mailto:milindpr@umich.edu">milindpr@umich.edu</a></p>
         <p class="hero__meta">Advised by Nikhil Bansal</p>
         <p class="hero__interests">Research interests: online algorithms, approximation algorithms</p>
       </div>
@@ -30,7 +31,7 @@ redirect_from:
 
   <section id="publications" class="home-section">
     <h2>Publications</h2>
-    <div class="pub-grid">
+    <div class="pub-list">
       {% assign pubs = site.publications | sort: 'date' | reverse %}
       {% for post in pubs %}
         <article class="pub-card">
