@@ -18,7 +18,7 @@ redirect_from:
 
 <div class="single-page-home">
   <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
-    Light
+    <span class="theme-toggle__icon" aria-hidden="true">💡</span>
   </button>
 
   <header class="hero" id="top">
@@ -89,7 +89,6 @@ redirect_from:
       var isLight = theme === "light";
       document.documentElement.setAttribute("data-theme", theme);
       localStorage.setItem("site-theme", theme);
-      button.textContent = isLight ? "Dark" : "Light";
       button.setAttribute("aria-label", isLight ? "Switch to dark mode" : "Switch to light mode");
       button.setAttribute("aria-pressed", isLight ? "true" : "false");
     }
