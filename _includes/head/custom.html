@@ -24,6 +24,57 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
+<style>
+  .pub-summary-toggle {
+    display: inline-flex;
+    align-items: center;
+    width: max-content;
+    padding: 0.18rem 0.55rem;
+    border: 1px solid var(--home-rule);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--home-link);
+    font-size: 0.82rem;
+    line-height: 1.2;
+    cursor: pointer;
+    transition: border-color 160ms ease, background 160ms ease, color 160ms ease, transform 160ms ease;
+  }
+
+  .pub-summary-toggle::before {
+    content: "+";
+    margin-right: 0.35rem;
+    color: var(--home-muted);
+  }
+
+  .pub-summary-toggle[aria-expanded="true"]::before {
+    content: "-";
+  }
+
+  .pub-summary-toggle:hover,
+  .pub-summary-toggle:focus {
+    border-color: var(--home-link);
+    background: var(--home-panel-hover);
+    color: var(--home-link-hover);
+    transform: translateY(-1px);
+  }
+
+  .pub-summary {
+    max-width: 62rem;
+    margin-top: 0.55rem;
+    color: var(--home-muted);
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  .pub-summary p {
+    margin: 0.45rem 0 0;
+  }
+
+  .pub-summary p:first-child {
+    margin-top: 0;
+  }
+</style>
+
 <script>
   window.MathJax = {
     tex: {
