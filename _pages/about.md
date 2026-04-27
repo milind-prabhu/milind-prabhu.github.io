@@ -56,6 +56,12 @@ redirect_from:
                 <a class="pub-link" href="{{ post.paperurl }}">Paper</a>
               {% endif %}
             </div>
+            {% if post.summary %}
+              <details class="pub-summary">
+                <summary>Summary</summary>
+                <p>{{ post.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+              </details>
+            {% endif %}
           </article>
         {% endfor %}
       </div>
