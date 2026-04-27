@@ -55,12 +55,14 @@ redirect_from:
               {% if post.paperurl %}
                 <a class="pub-link" href="{{ post.paperurl }}">Paper</a>
               {% endif %}
+              {% if post.summary %}
+                <button class="pub-summary-toggle" type="button" aria-expanded="false" aria-controls="summary-{{ forloop.index }}">Summary</button>
+              {% endif %}
             </div>
             {% if post.summary %}
-              <details class="pub-summary">
-                <summary>Summary</summary>
-                <div class="pub-summary__content">{{ post.summary | markdownify }}</div>
-              </details>
+              <div class="pub-summary" id="summary-{{ forloop.index }}" hidden>
+                {{ post.summary | markdownify }}
+              </div>
             {% endif %}
           </article>
         {% endfor %}
@@ -109,6 +111,28 @@ redirect_from:
     button.addEventListener("click", function () {
       var currentTheme = document.documentElement.getAttribute("data-theme") || "dark";
       setTheme(currentTheme === "light" ? "dark" : "light");
+    });
+  })();
+</script>
+
+<script>
+  (function () {
+    document.querySelectorAll(".pub-summary-toggle").forEach(function (button) {
+      var summary = document.getElementById(button.getAttribute("aria-controls"));
+
+      if (!summary) {
+        return;
+      }
+
+      button.addEventListener("click", function () {
+        var isOpen = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", isOpen ? "false" : "true");
+        summary.hidden = isOpen;
+
+        if (!isOpen && window.MathJax && window.MathJax.typesetPromise) {
+          window.MathJax.typesetPromise([summary]);
+        }
+      });
     });
   })();
 </script>
