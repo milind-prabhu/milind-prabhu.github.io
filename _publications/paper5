@@ -6,7 +6,7 @@ date: 2026-04-05
 citation: 'Nikhil Bansal, Sahil Singla, Siddharth M. Sundaram'
 paperurl: 'https://arxiv.org/pdf/2604.04159'
 summary: |-
-  The classic power of two choices phenomenon says that when placing $n$ balls into $n$ bins, sampling two uniformly random bins for each ball and placing it in the less-loaded one keeps the maximum load across bins below $O(\log\log n)$.
+  <p>The classic power of two choices phenomenon says that when placing $n$ balls into $n$ bins, sampling two uniformly random bins for each ball and placing it in the less-loaded one keeps the maximum load across bins below $O(\log\log n)$.</p>
 
-  We ask what happens when the two choices come from an arbitrary, possibly highly non-uniform distribution over bins. We observe that in this setting, surprisingly, the greedy strategy fails badly! The main contribution is a different algorithm that still keeps the maximum load within an $O(\log\log n)$ factor of the best possible.
+  <p>We ask what happens when the two choices come from an arbitrary, possibly highly non-uniform distribution over bins. We observe that in this setting, surprisingly, the greedy strategy fails badly! The main contribution is a different algorithm that still keeps the maximum load within an $O(\log\log n)$ factor of the best possible.</p>
 ---
