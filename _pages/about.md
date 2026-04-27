@@ -59,7 +59,7 @@ redirect_from:
             {% if post.summary %}
               <details class="pub-summary">
                 <summary>Summary</summary>
-                <p>{{ post.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                <div class="pub-summary__content">{{ post.summary | markdownify }}</div>
               </details>
             {% endif %}
           </article>
