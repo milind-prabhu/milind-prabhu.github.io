@@ -25,6 +25,55 @@
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
 <style>
+  .hero__media {
+    justify-self: end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.65rem;
+  }
+
+  .hero__icon-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.65rem;
+  }
+
+  .hero__icon-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--home-rule) !important;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--home-link) !important;
+    font-size: 1.05rem;
+    line-height: 1;
+    transition: border-color 160ms ease, background 160ms ease, color 160ms ease, transform 160ms ease;
+  }
+
+  .hero__icon-links a:hover,
+  .hero__icon-links a:focus {
+    border-color: var(--home-link) !important;
+    background: var(--home-panel-hover);
+    color: var(--home-link-hover) !important;
+    transform: translateY(-1px);
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
   .pub-summary-toggle {
     display: inline-flex;
     align-items: center;
