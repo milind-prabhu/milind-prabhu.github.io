@@ -83,6 +83,7 @@ redirect_from:
           <li><a href="https://vihanshah72.github.io/">Vihan Shah</a></li>
           <li><a href="https://faculty.cc.gatech.edu/~ssingla7/">Sahil Singla</a></li>
           <li><a href="https://aco.gatech.edu/users/siddharth-sundaram">Siddharth M. Sundaram</a></li>
+          <li><a href="https://sudarshansiitkgp.github.io/">Sudarshan Shyam</a></li>
           <li><a href="https://www.cs.cmu.edu/~dwoodruf/">David Woodruff</a></li>
         </ul>
       </div>
