@@ -30,12 +30,20 @@ redirect_from:
         <p class="hero__meta">I am fortunate to be advised by <a href="https://bansal.engin.umich.edu/">Nikhil Bansal</a>.</p>
         <p class="hero__meta hero__contact">Feel free to reach out to me if you would like to chat!</p>
         <p class="hero__email">"first name" + "pr@umich.edu"</p>
-        <nav class="hero__links" aria-label="Profile links">
-          <a href="{{ '/files/resume.pdf' | relative_url }}">CV</a>
-          <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+      </div>
+      <div class="hero__media">
+        <img class="hero__photo" src="{{ '/images/milind.png' | relative_url }}" alt="Portrait of Milind Prabhu" loading="lazy">
+        <nav class="hero__icon-links" aria-label="Profile links">
+          <a href="{{ '/files/resume.pdf' | relative_url }}" aria-label="CV">
+            <i class="fas fa-file-alt" aria-hidden="true"></i>
+            <span class="visually-hidden">CV</span>
+          </a>
+          <a href="{{ site.author.googlescholar }}" aria-label="Google Scholar">
+            <i class="ai ai-google-scholar" aria-hidden="true"></i>
+            <span class="visually-hidden">Google Scholar</span>
+          </a>
         </nav>
       </div>
-      <img class="hero__photo" src="{{ '/images/milind.png' | relative_url }}" alt="Portrait of Milind Prabhu" loading="lazy">
     </div>
   </header>
 
