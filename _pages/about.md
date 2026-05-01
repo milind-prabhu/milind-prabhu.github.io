@@ -54,7 +54,7 @@ redirect_from:
         {% assign pubs = site.publications | sort: 'date' | reverse %}
         {% for post in pubs %}
           <article class="pub-card">
-            <p class="pub-card__meta">{{ post.venue }} · {{ post.date | date: "%Y" }}</p>
+            <p class="pub-card__meta">{% if post.venue_display %}{{ post.venue_display }}{% else %}{{ post.venue }} · {{ post.date | date: "%Y" }}{% endif %}</p>
             <h3 class="pub-card__title">{{ post.title }}</h3>
             {% if post.citation %}
               <p class="pub-card__authors">with {{ post.citation }}</p>
