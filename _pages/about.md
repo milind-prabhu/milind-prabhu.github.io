@@ -61,7 +61,7 @@ redirect_from:
             {% endif %}
             <div class="pub-card__actions">
               {% if post.paperurl %}
-                <a class="pub-link" href="{{ post.paperurl }}">Paper</a>
+                <a class="pub-link" href="{{ post.paperurl }}">Link</a>
               {% endif %}
               {% if post.summary %}
                 <button class="pub-summary-toggle" type="button" aria-expanded="false" aria-controls="summary-{{ forloop.index }}">Summary</button>
