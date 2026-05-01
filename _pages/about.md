@@ -57,7 +57,7 @@ redirect_from:
             <p class="pub-card__meta">{{ post.venue }} · {{ post.date | date: "%Y" }}</p>
             <h3 class="pub-card__title">{{ post.title }}</h3>
             {% if post.citation %}
-              <p class="pub-card__authors">{{ post.citation }}</p>
+              <p class="pub-card__authors">with {{ post.citation }}</p>
             {% endif %}
             <div class="pub-card__actions">
               {% if post.paperurl %}
