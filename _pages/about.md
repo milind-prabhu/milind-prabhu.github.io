@@ -18,8 +18,7 @@ redirect_from:
 
 <div class="single-page-home">
   <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
-    <i class="fas fa-sun theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true"></i>
-    <i class="fas fa-moon theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true"></i>
+    <i class="fas fa-sun theme-toggle__icon" aria-hidden="true"></i>
   </button>
 
   <header class="hero" id="top">
@@ -103,6 +102,7 @@ redirect_from:
 <script>
   (function () {
     var button = document.querySelector(".theme-toggle");
+    var icon = button ? button.querySelector(".theme-toggle__icon") : null;
 
     if (!button) {
       return;
@@ -114,6 +114,11 @@ redirect_from:
       localStorage.setItem("site-theme", theme);
       button.setAttribute("aria-label", isLight ? "Switch to dark mode" : "Switch to light mode");
       button.setAttribute("aria-pressed", isLight ? "true" : "false");
+
+      if (icon) {
+        icon.classList.toggle("fa-moon", isLight);
+        icon.classList.toggle("fa-sun", !isLight);
+      }
     }
 
     setTheme(document.documentElement.getAttribute("data-theme") || "dark");
