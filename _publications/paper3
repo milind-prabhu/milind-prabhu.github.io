@@ -5,4 +5,6 @@ venue: 'ICML'
 date: 2024-05-01
 citation: 'David Woodruff'
 paperurl: 'https://arxiv.org/pdf/2409.06453'
+summary: >-
+  A set of binary strings is hidden. Each query is another binary string, and the response is whichever hidden string is closest in Hamming distance. How many queries are needed to recover the full hidden set? This simple question is wide open; we make partial progress on it.
 ---

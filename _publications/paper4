@@ -5,6 +5,8 @@ venue: 'FOCS'
 date: 2024-05-01
 citation: Nikhil Bansal, Vincent Cohen-Addad, David Saulpic, Chris Schwiegelshohn
 paperurl: 'https://arxiv.org/pdf/2405.01339'
+summary: >-
+  Coresets compress a large k-means instance into a small weighted sample that preserves the clustering objective. We show that sensitivity sampling achieves nearly optimal bounds for constructing k-means coresets, both in worst-case instances and in well-clustered data.
 ---
 
 

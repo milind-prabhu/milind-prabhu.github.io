@@ -6,6 +6,8 @@ venue: 'ICDT'
 citation: 'Sepehr Assadi, Nirmit Joshi, Vihan Shah'
 date: 2023-03-01
 paperurl: 'https://arxiv.org/pdf/2303.06288'
+summary: >-
+  The Greenwald-Khanna algorithm estimates quantiles in a data stream using little memory. We extend it to weighted streams, where each item may stand for many copies, without explicitly expanding those copies.
 ---
 
 

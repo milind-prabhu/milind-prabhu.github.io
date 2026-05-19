@@ -5,5 +5,7 @@ venue: 'APPROX'
 citation: 'Nikhil Ayyadevara, Nikhil Bansal'
 date: 2023-06-01
 paperurl: 'https://arxiv.org/pdf/2307.13937'
+summary: >-
+  In classical makespan minimization, the goal is to assign jobs to machines so that no machine receives too much total load. We study a broad generalization where each machine measures its load using a different norm. While many special cases admit good approximation algorithms, we show that the general problem is much harder.
 ---
 
