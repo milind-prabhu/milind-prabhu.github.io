@@ -18,7 +18,8 @@ redirect_from:
 
 <div class="single-page-home">
   <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
-    <span class="theme-toggle__icon" aria-hidden="true">💡</span>
+    <i class="fas fa-sun theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true"></i>
+    <i class="fas fa-moon theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true"></i>
   </button>
 
   <header class="hero" id="top">
