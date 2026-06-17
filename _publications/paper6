@@ -6,4 +6,6 @@ venue_display: 'ICML 2026'
 date: 2026-04-30
 citation: 'Chris Schwiegelshohn, Sudarshan Shyam'
 paperurl: 'https://arxiv.org/pdf/2606.17316'
+summary: >-
+  Standard coresets preserve the cost of every possible clustering solution, which can force pessimistic size bounds. We introduce approximation-preserving coresets, which focus on preserving good solutions and help explain why much smaller coresets often work well in practice.
 ---
