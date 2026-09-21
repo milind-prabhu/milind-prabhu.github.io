@@ -1,0 +1,9 @@
+---
+title: "The Cube-Root Phenomenon in Online Carpooling"
+collection: preprints
+date: 2026-09-18
+citation: 'Nikhil Bansal, Sahil Singla, Siddharth M. Sundaram'
+paperurl: 'https://arxiv.org/pdf/2609.21348'
+summary: >-
+  In online carpooling, edges arrive one at a time and must be oriented immediately, while keeping the imbalance between incoming and outgoing edges at every vertex small. We show that the natural greedy algorithm achieves $O(\min\{T^{1/3},n\})$ discrepancy, matching the known lower bound and resolving the longstanding cube-root versus square-root gap. We also obtain analogous cube-root improvements for random arrivals on regular graphs.
+---

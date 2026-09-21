@@ -48,34 +48,65 @@ redirect_from:
   </header>
 
   <main class="home-main">
-    <section id="publications" class="home-section publications-section">
-      <h2>Publications</h2>
-      <div class="pub-list">
-        {% assign pubs = site.publications | sort: 'date' | reverse %}
-        {% for post in pubs %}
-          <article class="pub-card">
-            <p class="pub-card__meta">{% if post.venue_display %}{{ post.venue_display }}{% else %}{{ post.venue }} · {{ post.date | date: "%Y" }}{% endif %}</p>
-            <h3 class="pub-card__title">{{ post.title }}</h3>
-            {% if post.citation %}
-              <p class="pub-card__authors">with {{ post.citation }}</p>
-            {% endif %}
-            <div class="pub-card__actions">
-              {% if post.paperurl %}
-                <a class="pub-link" href="{{ post.paperurl }}">Link</a>
+    <div class="research-sections" style="display:flex;flex-direction:column;gap:2rem;min-width:0">
+      <section id="preprints" class="home-section preprints-section">
+        <h2>Preprints</h2>
+        <div class="pub-list">
+          {% assign preprints = site.preprints | sort: 'date' | reverse %}
+          {% for post in preprints %}
+            <article class="pub-card">
+              <p class="pub-card__meta">{% if post.venue_display %}{{ post.venue_display }}{% else %}Preprint · {{ post.date | date: "%Y" }}{% endif %}</p>
+              <h3 class="pub-card__title">{{ post.title }}</h3>
+              {% if post.citation %}
+                <p class="pub-card__authors">with {{ post.citation }}</p>
               {% endif %}
-              {% if post.summary %}
-                <button class="pub-summary-toggle" type="button" aria-expanded="false" aria-controls="summary-{{ forloop.index }}">Summary</button>
-              {% endif %}
-            </div>
-            {% if post.summary %}
-              <div class="pub-summary" id="summary-{{ forloop.index }}" hidden>
-                {{ post.summary | markdownify }}
+              <div class="pub-card__actions">
+                {% if post.paperurl %}
+                  <a class="pub-link" href="{{ post.paperurl }}">Link</a>
+                {% endif %}
+                {% if post.summary %}
+                  <button class="pub-summary-toggle" type="button" aria-expanded="false" aria-controls="preprint-summary-{{ forloop.index }}">Summary</button>
+                {% endif %}
               </div>
-            {% endif %}
-          </article>
-        {% endfor %}
-      </div>
-    </section>
+              {% if post.summary %}
+                <div class="pub-summary" id="preprint-summary-{{ forloop.index }}" hidden>
+                  {{ post.summary | markdownify }}
+                </div>
+              {% endif %}
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="publications" class="home-section publications-section">
+        <h2>Publications</h2>
+        <div class="pub-list">
+          {% assign pubs = site.publications | sort: 'date' | reverse %}
+          {% for post in pubs %}
+            <article class="pub-card">
+              <p class="pub-card__meta">{% if post.venue_display %}{{ post.venue_display }}{% else %}{{ post.venue }} · {{ post.date | date: "%Y" }}{% endif %}</p>
+              <h3 class="pub-card__title">{{ post.title }}</h3>
+              {% if post.citation %}
+                <p class="pub-card__authors">with {{ post.citation }}</p>
+              {% endif %}
+              <div class="pub-card__actions">
+                {% if post.paperurl %}
+                  <a class="pub-link" href="{{ post.paperurl }}">Link</a>
+                {% endif %}
+                {% if post.summary %}
+                  <button class="pub-summary-toggle" type="button" aria-expanded="false" aria-controls="publication-summary-{{ forloop.index }}">Summary</button>
+                {% endif %}
+              </div>
+              {% if post.summary %}
+                <div class="pub-summary" id="publication-summary-{{ forloop.index }}" hidden>
+                  {{ post.summary | markdownify }}
+                </div>
+              {% endif %}
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    </div>
 
     <aside id="collaborators" class="home-section collaborators-panel">
       <h2>Shoutout to My Collaborators!</h2>
