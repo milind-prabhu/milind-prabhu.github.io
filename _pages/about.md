@@ -17,97 +17,52 @@ redirect_from:
 </script>
 
 <div class="single-page-home">
-  <nav class="home-nav" aria-label="Primary navigation">
-    <a class="home-nav__brand" href="#top" aria-label="Milind Prabhu, back to top">MP</a>
-    <div class="home-nav__links">
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="{{ '/files/resume.pdf' | relative_url }}">CV</a>
-      <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
-        <i class="fas fa-sun theme-toggle__icon" aria-hidden="true"></i>
-      </button>
-    </div>
-  </nav>
+  <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+    <i class="fas fa-sun theme-toggle__icon" aria-hidden="true"></i>
+  </button>
 
   <header class="hero" id="top">
     <div class="hero__layout">
       <div class="hero__content">
-        <p class="hero__eyebrow">Theoretical computer science · Algorithms</p>
         <h1>Milind Prabhu</h1>
-        <p class="hero__subtitle">PhD student at <a class="plain-link" href="https://theory.engin.umich.edu/">UMich Theory Lab</a></p>
-        <p class="hero__lede">I design algorithms for making good decisions with limited information—especially in online, approximation, and clustering problems.</p>
-        <div class="focus-tags" aria-label="Research areas">
-          <span>Online algorithms</span>
-          <span>Approximation</span>
-          <span>Coresets</span>
-          <span>Discrepancy</span>
-        </div>
-        <div class="hero__actions">
-          <a class="button-link button-link--primary" href="{{ '/files/resume.pdf' | relative_url }}">
-            <i class="fas fa-file-alt" aria-hidden="true"></i>
-            View CV
-          </a>
-          <a class="button-link" href="{{ site.author.googlescholar }}">
-            <i class="ai ai-google-scholar" aria-hidden="true"></i>
-            Google Scholar
-          </a>
-        </div>
-        <p class="hero__meta">Advised by <a href="https://bansal.engin.umich.edu/">Nikhil Bansal</a>. Always happy to talk about algorithms and their applications.</p>
+        <p class="hero__subtitle">PhD student @ <a class="plain-link" href="https://theory.engin.umich.edu/">UMich Theory Lab</a></p>
+        <p class="hero__interests">I like thinking about online and approximation algorithms.</p>
+        <p class="hero__meta">I am fortunate to be advised by <a href="https://bansal.engin.umich.edu/">Nikhil Bansal</a>.</p>
+        <p class="hero__meta hero__contact">Feel free to reach out to me if you would like to chat!</p>
         <p class="hero__email">"first name" + "pr@umich.edu"</p>
       </div>
       <div class="hero__media">
         <img class="hero__photo" src="{{ '/images/milind.png' | relative_url }}" alt="Portrait of Milind Prabhu" loading="lazy">
-        <span class="hero__media-label">Algorithms · Theory · Impact</span>
+        <nav class="hero__icon-links" aria-label="Profile links">
+          <a href="{{ '/files/resume.pdf' | relative_url }}" aria-label="CV">
+            <i class="fas fa-file-alt" aria-hidden="true"></i>
+            <span class="visually-hidden">CV</span>
+          </a>
+          <a href="{{ site.author.googlescholar }}" aria-label="Google Scholar">
+            <i class="ai ai-google-scholar" aria-hidden="true"></i>
+            <span class="visually-hidden">Google Scholar</span>
+          </a>
+        </nav>
       </div>
     </div>
   </header>
 
-  <section class="research-overview" id="research" aria-labelledby="research-heading">
-    <div class="section-heading section-heading--overview">
-      <p class="section-kicker">Research focus</p>
-      <h2 id="research-heading">Theory for decisions under constraints</h2>
-    </div>
-    <div class="research-grid">
-      <article class="research-card">
-        <span class="research-card__number">01</span>
-        <h3>Online decisions</h3>
-        <p>Algorithms that act before the future is known, with guarantees that hold even in difficult inputs.</p>
-      </article>
-      <article class="research-card">
-        <span class="research-card__number">02</span>
-        <h3>Approximation</h3>
-        <p>Provable solutions for optimization problems where exact computation is too costly or impossible.</p>
-      </article>
-      <article class="research-card">
-        <span class="research-card__number">03</span>
-        <h3>Data reduction</h3>
-        <p>Small representations that preserve the structure needed for reliable downstream decisions.</p>
-      </article>
-    </div>
-  </section>
-
   <main class="home-main">
-    <div class="research-sections">
+    <div class="research-sections" style="display:flex;flex-direction:column;gap:2rem;min-width:0">
       <section id="preprints" class="home-section preprints-section">
-        <div class="section-heading">
-          <div>
-            <p class="section-kicker">Latest work</p>
-            <h2>Preprints</h2>
-          </div>
-          <p class="section-intro">Recent results and work in progress.</p>
-        </div>
+        <h2>Preprints</h2>
         <div class="pub-list">
           {% assign preprints = site.preprints | sort: 'date' | reverse %}
           {% for post in preprints %}
-            <article class="pub-card pub-card--featured">
-              <p class="pub-card__meta"><span>{% if post.venue_display %}{{ post.venue_display }}{% else %}Preprint{% endif %}</span><span>{{ post.date | date: "%Y" }}</span></p>
+            <article class="pub-card">
+              <p class="pub-card__meta">{% if post.venue_display %}{{ post.venue_display }}{% else %}Preprint · {{ post.date | date: "%Y" }}{% endif %}</p>
               <h3 class="pub-card__title">{{ post.title }}</h3>
               {% if post.citation %}
                 <p class="pub-card__authors">with {{ post.citation }}</p>
               {% endif %}
               <div class="pub-card__actions">
                 {% if post.paperurl %}
-                  <a class="pub-link" href="{{ post.paperurl }}">Read paper <span aria-hidden="true">↗</span></a>
+                  <a class="pub-link" href="{{ post.paperurl }}">Link</a>
                 {% endif %}
                 {% if post.summary %}
                   <button class="pub-summary-toggle" type="button" aria-expanded="false" aria-controls="preprint-summary-{{ forloop.index }}">Summary</button>
@@ -124,25 +79,19 @@ redirect_from:
       </section>
 
       <section id="publications" class="home-section publications-section">
-        <div class="section-heading">
-          <div>
-            <p class="section-kicker">Selected research</p>
-            <h2>Publications</h2>
-          </div>
-          <p class="section-intro">Peer-reviewed work in algorithms, optimization, and learning.</p>
-        </div>
+        <h2>Publications</h2>
         <div class="pub-list">
           {% assign pubs = site.publications | sort: 'date' | reverse %}
           {% for post in pubs %}
             <article class="pub-card">
-              <p class="pub-card__meta"><span>{% if post.venue_display %}{{ post.venue_display }}{% else %}{{ post.venue }}{% endif %}</span><span>{{ post.date | date: "%Y" }}</span></p>
+              <p class="pub-card__meta">{% if post.venue_display %}{{ post.venue_display }}{% else %}{{ post.venue }} · {{ post.date | date: "%Y" }}{% endif %}</p>
               <h3 class="pub-card__title">{{ post.title }}</h3>
               {% if post.citation %}
                 <p class="pub-card__authors">with {{ post.citation }}</p>
               {% endif %}
               <div class="pub-card__actions">
                 {% if post.paperurl %}
-                  <a class="pub-link" href="{{ post.paperurl }}">Read paper <span aria-hidden="true">↗</span></a>
+                  <a class="pub-link" href="{{ post.paperurl }}">Link</a>
                 {% endif %}
                 {% if post.summary %}
                   <button class="pub-summary-toggle" type="button" aria-expanded="false" aria-controls="publication-summary-{{ forloop.index }}">Summary</button>
@@ -159,13 +108,8 @@ redirect_from:
       </section>
     </div>
 
-    <section id="collaborators" class="home-section collaborators-panel">
-      <div class="section-heading">
-        <div>
-          <p class="section-kicker">Research network</p>
-          <h2>Collaborators</h2>
-        </div>
-      </div>
+    <aside id="collaborators" class="home-section collaborators-panel">
+      <h2>Shoutout to My Collaborators!</h2>
       <div class="collaborators-box">
         <ul class="collaborators-list">
           <li><a href="https://sepehr.assadi.info/">Sepehr Assadi</a></li>
@@ -182,7 +126,7 @@ redirect_from:
           <li><a href="https://www.cs.cmu.edu/~dwoodruf/">David Woodruff</a></li>
         </ul>
       </div>
-    </section>
+    </aside>
   </main>
 </div>
 
