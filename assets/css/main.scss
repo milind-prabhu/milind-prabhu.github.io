@@ -89,9 +89,22 @@ body:has(.single-page-home) #site-nav {
   border: 0;
 }
 
+body:has(.single-page-home) #main {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body:has(.single-page-home) .page {
+  float: none;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .single-page-home {
   color: var(--home-text);
-  max-width: min(1260px, calc(100vw - 4rem));
+  max-width: min(1120px, calc(100vw - 4rem));
   margin: 0 auto;
   padding: 2rem 0 4rem;
   position: relative;
