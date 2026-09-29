@@ -6,6 +6,20 @@ classes: wide
 redirect_from:
   - /about/
   - /about.html
+author_links:
+  "Sepehr Assadi": "https://sepehr.assadi.info/"
+  "Nikhil Ayyadevara": "https://dblp.org/pid/286/1893.html"
+  "Nikhil Bansal": "https://bansal.engin.umich.edu/"
+  "Vincent Cohen-Addad": "https://www.di.ens.fr/~vcohen/"
+  "Nirmit Joshi": "https://nirmitj6.github.io/static-webpage/"
+  "David Saulpic": "https://www.normalesup.org/~saulpic/"
+  "Chris Schwiegelshohn": "https://cs.au.dk/~schwiegelshohn/"
+  "Vihan Shah": "https://vihanshah72.github.io/"
+  "Sahil Singla": "https://faculty.cc.gatech.edu/~ssingla7/"
+  "Siddharth M. Sundaram": "https://aco.gatech.edu/users/siddharth-sundaram"
+  "Sudarshan Shyam": "https://sudarshansiitkgp.github.io/"
+  "Erik Waingarten": "https://sites.google.com/site/erikwaing/home"
+  "David Woodruff": "https://www.cs.cmu.edu/~dwoodruf/"
 ---
 
 <script>
@@ -47,7 +61,7 @@ redirect_from:
     </div>
   </header>
 
-  <main class="home-main">
+  <main class="home-main" style="grid-template-columns:minmax(0,1fr);gap:0">
     <div class="research-sections" style="display:flex;flex-direction:column;gap:2rem;min-width:0">
       <section id="preprints" class="home-section preprints-section">
         <h2>Preprints</h2>
@@ -58,7 +72,8 @@ redirect_from:
               <p class="pub-card__meta">{% if post.venue_display %}{{ post.venue_display }}{% else %}Preprint · {{ post.date | date: "%Y" }}{% endif %}</p>
               <h3 class="pub-card__title">{{ post.title }}</h3>
               {% if post.citation %}
-                <p class="pub-card__authors">with {{ post.citation }}</p>
+                {% assign authors = post.citation | split: ', ' %}
+                <p class="pub-card__authors">with {% for author in authors %}{% assign author_url = page.author_links[author] %}{% if author_url %}<a href="{{ author_url }}">{{ author }}</a>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
               {% endif %}
               <div class="pub-card__actions">
                 {% if post.paperurl %}
@@ -87,7 +102,8 @@ redirect_from:
               <p class="pub-card__meta">{% if post.venue_display %}{{ post.venue_display }}{% else %}{{ post.venue }} · {{ post.date | date: "%Y" }}{% endif %}</p>
               <h3 class="pub-card__title">{{ post.title }}</h3>
               {% if post.citation %}
-                <p class="pub-card__authors">with {{ post.citation }}</p>
+                {% assign authors = post.citation | split: ', ' %}
+                <p class="pub-card__authors">with {% for author in authors %}{% assign author_url = page.author_links[author] %}{% if author_url %}<a href="{{ author_url }}">{{ author }}</a>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
               {% endif %}
               <div class="pub-card__actions">
                 {% if post.paperurl %}
@@ -107,27 +123,6 @@ redirect_from:
         </div>
       </section>
     </div>
-
-    <aside id="collaborators" class="home-section collaborators-panel">
-      <h2>Shoutout to My Collaborators!</h2>
-      <div class="collaborators-box">
-        <ul class="collaborators-list">
-          <li><a href="https://sepehr.assadi.info/">Sepehr Assadi</a></li>
-          <li><a href="https://dblp.org/pid/286/1893.html">Nikhil Ayyadevara</a></li>
-          <li><a href="https://bansal.engin.umich.edu/">Nikhil Bansal</a></li>
-          <li><a href="https://www.di.ens.fr/~vcohen/">Vincent Cohen-Addad</a></li>
-          <li><a href="https://nirmitj6.github.io/static-webpage/">Nirmit Joshi</a></li>
-          <li><a href="https://www.normalesup.org/~saulpic/">David Saulpic</a></li>
-          <li><a href="https://cs.au.dk/~schwiegelshohn/">Chris Schwiegelshohn</a></li>
-          <li><a href="https://vihanshah72.github.io/">Vihan Shah</a></li>
-          <li><a href="https://faculty.cc.gatech.edu/~ssingla7/">Sahil Singla</a></li>
-          <li><a href="https://aco.gatech.edu/users/siddharth-sundaram">Siddharth M. Sundaram</a></li>
-          <li><a href="https://sudarshansiitkgp.github.io/">Sudarshan Shyam</a></li>
-          <li><a href="https://sites.google.com/site/erikwaing/home">Erik Waingarten</a></li>
-          <li><a href="https://www.cs.cmu.edu/~dwoodruf/">David Woodruff</a></li>
-        </ul>
-      </div>
-    </aside>
   </main>
 </div>
 
