@@ -1,0 +1,9 @@
+---
+title: "Non-Clairvoyant Scheduling is Hard Even for Trees"
+collection: preprints
+date: 2026-10-07
+citation: 'Kunal Agrawal, Owen Druzgal, Jinhao Zhao'
+paperurl: 'https://arxiv.org/abs/2610.11006'
+summary: >-
+  We study online non-clairvoyant scheduling of DAG jobs on $m$ identical processors. Each job consists of unit-time subjobs connected by precedence constraints, but its DAG is initially unknown and each subjob is revealed only when it becomes ready. We show that the optimal competitive ratio for minimizing maximum flow time is $\Theta(\min\{m,\mathrm{OPT}\})$, even when every job is an out-forest. This is surprising because FIFO was previously known to be $O(\log m)$-competitive in several natural settings and was believed to retain this guarantee more generally.
+---
