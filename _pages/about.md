@@ -19,10 +19,6 @@ redirect_from:
 <div class="single-page-home">
   <header class="home-topbar">
     <nav class="home-nav" aria-label="Primary navigation">
-      <a href="#focus">Research</a>
-      <a href="#selected">Publications</a>
-      <a href="{{ '/files/resume.pdf' | relative_url }}">CV</a>
-      <a href="mailto:milindpr@umich.edu">Contact</a>
       <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
         <i class="fas fa-sun theme-toggle__icon" aria-hidden="true"></i>
       </button>
@@ -33,7 +29,7 @@ redirect_from:
     <section class="hero" id="top">
       <div class="hero__content">
         <h1>Milind Prabhu</h1>
-        <p class="hero__meta">PhD Candidate @UMich, advised by <a href="https://bansal.engin.umich.edu/">Nikhil Bansal</a>.</p>
+        <p class="hero__meta">PhD Candidate <a href="https://theory.engin.umich.edu/">@UMich</a>, advised by <a href="https://bansal.engin.umich.edu/">Nikhil Bansal</a>.</p>
         <p class="hero__copy">I design algorithms for big data.</p>
       </div>
       <div class="hero__portrait">
