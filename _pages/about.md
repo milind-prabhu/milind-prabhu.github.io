@@ -16,6 +16,32 @@ redirect_from:
   })();
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var buttons = document.querySelectorAll(".paper-summary-toggle");
+
+    buttons.forEach(function (button) {
+      var summaryId = button.getAttribute("aria-controls");
+      var summary = document.getElementById(summaryId);
+      var icon = button.querySelector(".paper-summary-toggle__icon");
+
+      if (!summary) {
+        return;
+      }
+
+      button.addEventListener("click", function () {
+        var willOpen = button.getAttribute("aria-expanded") !== "true";
+        button.setAttribute("aria-expanded", willOpen ? "true" : "false");
+        summary.hidden = !willOpen;
+
+        if (icon) {
+          icon.textContent = willOpen ? "−" : "+";
+        }
+      });
+    });
+  });
+</script>
+
 <div class="single-page-home">
   <header class="home-topbar">
     <nav class="home-nav" aria-label="Primary navigation">
@@ -144,17 +170,30 @@ redirect_from:
             <li>
               <span class="paper-title">Coresets for Capacitated Clustering via Dual Concentration</span>
               <span class="paper-meta">SODA 2027</span>
-              <span class="paper-authors">with <a href="https://cs.au.dk/~schwiegelshohn/">Chris Schwiegelshohn</a>, <a href="https://sudarshansiitkgp.github.io/">Sudarshan Shyam</a>, and <a href="https://sites.google.com/site/erikwaing/home">Erik Waingarten</a></span>
+              <span class="paper-authors">with <a href="https://cs.au.dk/~schwiegelshohn/">Chris Schwiegelshohn</a>, <a href="https://sudarshanshy.github.io/">Sudarshan Shyam</a>, and <a href="https://sites.google.com/site/erikwaing/home">Erik Waingarten</a></span>
             </li>
             <li>
               <span class="paper-title">Fault Tolerant Coresets</span>
               <span class="paper-meta">NeurIPS 2026</span>
-              <span class="paper-authors">with <a href="https://cs.au.dk/~schwiegelshohn/">Chris Schwiegelshohn</a> and <a href="https://sudarshansiitkgp.github.io/">Sudarshan Shyam</a></span>
+              <span class="paper-authors">with <a href="https://cs.au.dk/~schwiegelshohn/">Chris Schwiegelshohn</a> and <a href="https://sudarshanshy.github.io/">Sudarshan Shyam</a></span>
+              <div class="paper-actions">
+                <button class="paper-summary-toggle" type="button" aria-expanded="false" aria-controls="summary-fault-tolerant"><span class="paper-summary-toggle__icon" aria-hidden="true">+</span> Summary</button>
+              </div>
+              <div class="paper-summary-box" id="summary-fault-tolerant" hidden>
+                Coresets compress large datasets into small weighted summaries, but standard constructions assume the summary remains intact during storage and transmission. We show that sensitivity sampling yields coresets that can recover from up to $f$ adversarial corruptions with only an additive $O(fk/\varepsilon)$ size overhead for $k$-means, and prove that this dependence is optimal.
+              </div>
             </li>
             <li>
-              <a class="paper-title" href="https://arxiv.org/pdf/2405.01339">Sensitivity Sampling for k-Means: Worst Case and Stability Optimal Coreset Bounds</a>
+              <span class="paper-title">Sensitivity Sampling for k-Means: Worst Case and Stability Optimal Coreset Bounds</span>
               <span class="paper-meta">FOCS 2024</span>
               <span class="paper-authors">with <a href="https://bansal.engin.umich.edu/">Nikhil Bansal</a>, <a href="https://www.di.ens.fr/~vcohen/">Vincent Cohen-Addad</a>, <a href="https://www.normalesup.org/~saulpic/">David Saulpic</a>, and <a href="https://cs.au.dk/~schwiegelshohn/">Chris Schwiegelshohn</a></span>
+              <div class="paper-actions">
+                <a class="paper-link" href="https://arxiv.org/pdf/2405.01339">Link</a>
+                <button class="paper-summary-toggle" type="button" aria-expanded="false" aria-controls="summary-sensitivity"><span class="paper-summary-toggle__icon" aria-hidden="true">+</span> Summary</button>
+              </div>
+              <div class="paper-summary-box" id="summary-sensitivity" hidden>
+                Coresets compress a large k-means instance into a small weighted sample that preserves the clustering objective. We show that sensitivity sampling achieves nearly optimal bounds for constructing k-means coresets, both in worst-case instances and in well-clustered data.
+              </div>
             </li>
           </ol>
         </section>
@@ -163,19 +202,41 @@ redirect_from:
           <h3 class="column-label" id="balancing-papers-title">Load balancing</h3>
           <ol class="paper-list">
             <li>
-              <a class="paper-title" href="https://arxiv.org/pdf/2604.04159">Online Graph Balancing and the Power of Two Choices</a>
+              <span class="paper-title">Online Graph Balancing and the Power of Two Choices</span>
               <span class="paper-meta">FOCS 2026</span>
               <span class="paper-authors">with <a href="https://bansal.engin.umich.edu/">Nikhil Bansal</a>, <a href="https://faculty.cc.gatech.edu/~ssingla7/">Sahil Singla</a>, and <a href="https://aco.gatech.edu/users/siddharth-sundaram">Siddharth M. Sundaram</a></span>
+              <div class="paper-actions">
+                <a class="paper-link" href="https://arxiv.org/pdf/2604.04159">Link</a>
+                <button class="paper-summary-toggle" type="button" aria-expanded="false" aria-controls="summary-graph-balancing"><span class="paper-summary-toggle__icon" aria-hidden="true">+</span> Summary</button>
+              </div>
+              <div class="paper-summary-box" id="summary-graph-balancing" hidden>
+                <p>The classic power of two choices phenomenon says that when placing $n$ balls into $n$ bins, sampling two uniformly random bins for each ball and placing it in the less-loaded one keeps the maximum load across bins below $O(\log\log n)$.</p>
+                <p>We ask what happens when the two choices come from an arbitrary, possibly highly non-uniform distribution over bins. We observe that in this setting, surprisingly, the greedy strategy fails badly. The main contribution is a different algorithm that still keeps the maximum load within an $O(\log\log n)$ factor of the best possible.</p>
+              </div>
             </li>
             <li>
-              <a class="paper-title" href="https://arxiv.org/pdf/2609.21348">The Cube-Root Phenomenon in Online Carpooling</a>
+              <span class="paper-title">The Cube-Root Phenomenon in Online Carpooling</span>
               <span class="paper-meta">Preprint 2026</span>
               <span class="paper-authors">with <a href="https://bansal.engin.umich.edu/">Nikhil Bansal</a>, <a href="https://faculty.cc.gatech.edu/~ssingla7/">Sahil Singla</a>, and <a href="https://aco.gatech.edu/users/siddharth-sundaram">Siddharth M. Sundaram</a></span>
+              <div class="paper-actions">
+                <a class="paper-link" href="https://arxiv.org/pdf/2609.21348">Link</a>
+                <button class="paper-summary-toggle" type="button" aria-expanded="false" aria-controls="summary-carpooling"><span class="paper-summary-toggle__icon" aria-hidden="true">+</span> Summary</button>
+              </div>
+              <div class="paper-summary-box" id="summary-carpooling" hidden>
+                In online carpooling, edges arrive one at a time and must be oriented immediately, while keeping the imbalance between incoming and outgoing edges at every vertex small. We show that the natural greedy algorithm achieves $O(\min\{T^{1/3},n\})$ discrepancy, matching the known lower bound and resolving the longstanding cube-root versus square-root gap. We also obtain analogous cube-root improvements for random arrivals on regular graphs.
+              </div>
             </li>
             <li>
-              <a class="paper-title" href="https://arxiv.org/abs/2610.11006">Non-Clairvoyant Scheduling is Hard Even for Trees</a>
+              <span class="paper-title">Non-Clairvoyant Scheduling is Hard Even for Trees</span>
               <span class="paper-meta">Preprint 2026</span>
               <span class="paper-authors">with <a href="https://www.cse.wustl.edu/~kunal/">Kunal Agrawal</a>, <a href="https://www.linkedin.com/in/owen-druzgal-b00b872a8">Owen Druzgal</a>, and <a href="https://www.moeheart.cn/">Jinhao Zhao</a></span>
+              <div class="paper-actions">
+                <a class="paper-link" href="https://arxiv.org/abs/2610.11006">Link</a>
+                <button class="paper-summary-toggle" type="button" aria-expanded="false" aria-controls="summary-scheduling"><span class="paper-summary-toggle__icon" aria-hidden="true">+</span> Summary</button>
+              </div>
+              <div class="paper-summary-box" id="summary-scheduling" hidden>
+                We study online non-clairvoyant scheduling of DAG jobs on $m$ identical processors. Each job consists of unit-time subjobs connected by precedence constraints, but its DAG is initially unknown and each subjob is revealed only when it becomes ready. We show that the optimal competitive ratio for minimizing maximum flow time is $\Theta(\min\{m,\mathrm{OPT}\})$, even when every job is an out-forest. This is surprising because FIFO was previously known to be $O(\log m)$-competitive in several natural settings and was believed to retain this guarantee more generally.
+              </div>
             </li>
           </ol>
         </section>
