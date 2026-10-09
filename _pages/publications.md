@@ -15,7 +15,7 @@ author_links:
   "Vihan Shah": "https://vihanshah72.github.io/"
   "Sahil Singla": "https://faculty.cc.gatech.edu/~ssingla7/"
   "Siddharth M. Sundaram": "https://aco.gatech.edu/users/siddharth-sundaram"
-  "Sudarshan Shyam": "https://sudarshansiitkgp.github.io/"
+  "Sudarshan Shyam": "https://sudarshanshy.github.io/"
   "Erik Waingarten": "https://sites.google.com/site/erikwaing/home"
   "David Woodruff": "https://www.cs.cmu.edu/~dwoodruf/"
   "Kunal Agrawal": "https://www.cse.wustl.edu/~kunal/"
