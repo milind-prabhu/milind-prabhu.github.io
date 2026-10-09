@@ -33,7 +33,7 @@ redirect_from:
         <p class="hero__copy">I design algorithms for big data.</p>
       </div>
       <div class="hero__portrait">
-        <img class="hero__photo" src="{{ '/images/milind.png' | relative_url }}" alt="Portrait of Milind Prabhu">
+        <img class="hero__photo" src="{{ '/images/milind-green.webp' | relative_url }}" alt="Portrait of Milind Prabhu">
         <nav class="hero__quick-links" aria-label="Profile links">
           <a href="{{ '/files/resume.pdf' | relative_url }}" aria-label="Résumé" title="Résumé"><i class="fas fa-file-alt" aria-hidden="true"></i></a>
           <a href="https://scholar.google.com/citations?user=vu73GNIAAAAJ&amp;hl=en&amp;oi=ao" aria-label="Google Scholar" title="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
