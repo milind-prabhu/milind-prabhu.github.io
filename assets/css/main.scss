@@ -898,7 +898,7 @@ body:has(.single-page-home) .page__footer {
 
 .paper-list li {
   display: flex;
-  min-height: 11.5rem;
+  min-height: 8.5rem;
   flex-direction: column;
   padding: 1rem 1.05rem;
   border-radius: 0.8rem;
@@ -915,6 +915,13 @@ body:has(.single-page-home) .page__footer {
   font-size: 0.92rem;
   font-weight: 520;
   line-height: 1.4;
+}
+
+.single-page-home a.paper-title,
+.single-page-home a.paper-title:hover,
+.single-page-home a.paper-title:focus,
+.single-page-home a.paper-title:visited {
+  color: var(--home-heading) !important;
 }
 
 .paper-meta {
@@ -1211,7 +1218,7 @@ body:has(.publications-archive-page) .archive > .page__title {
 
 a.publication-archive-card__title:hover,
 a.publication-archive-card__title:focus {
-  color: var(--home-link) !important;
+  color: var(--home-heading) !important;
 }
 
 .publication-archive-card__venue {
