@@ -74,10 +74,53 @@ author_links:
             {% endfor %}
           </p>
         {% endif %}
+
+        {% if paper.paperurl or paper.summary %}
+          <div class="paper-actions">
+            {% if paper.paperurl %}
+              <a class="paper-link" href="{{ paper.paperurl }}">Link</a>
+            {% endif %}
+            {% if paper.summary %}
+              <button class="paper-summary-toggle" type="button" aria-expanded="false" aria-controls="publication-summary-{{ forloop.index }}"><span class="paper-summary-toggle__icon" aria-hidden="true">+</span> Summary</button>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {% if paper.summary %}
+          <div class="paper-summary-box" id="publication-summary-{{ forloop.index }}" hidden>
+            {{ paper.summary }}
+          </div>
+        {% endif %}
       </li>
     {% endfor %}
   </ol>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var summaryButtons = document.querySelectorAll(".paper-summary-toggle");
+
+    summaryButtons.forEach(function (summaryButton) {
+      var summaryId = summaryButton.getAttribute("aria-controls");
+      var summary = document.getElementById(summaryId);
+      var summaryIcon = summaryButton.querySelector(".paper-summary-toggle__icon");
+
+      if (!summary) {
+        return;
+      }
+
+      summaryButton.addEventListener("click", function () {
+        var willOpen = summaryButton.getAttribute("aria-expanded") !== "true";
+        summaryButton.setAttribute("aria-expanded", willOpen ? "true" : "false");
+        summary.hidden = !willOpen;
+
+        if (summaryIcon) {
+          summaryIcon.textContent = willOpen ? "−" : "+";
+        }
+      });
+    });
+  });
+</script>
 
 <script>
   (function () {
