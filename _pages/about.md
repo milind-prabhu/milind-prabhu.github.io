@@ -20,6 +20,9 @@ author_links:
   "Sudarshan Shyam": "https://sudarshansiitkgp.github.io/"
   "Erik Waingarten": "https://sites.google.com/site/erikwaing/home"
   "David Woodruff": "https://www.cs.cmu.edu/~dwoodruf/"
+  "Kunal Agrawal": "https://www.cse.wustl.edu/~kunal/"
+  "Owen Druzgal": "https://www.linkedin.com/in/owen-druzgal-b00b872a8"
+  "Jinhao Zhao": "https://www.moeheart.cn/"
 ---
 
 <script>
