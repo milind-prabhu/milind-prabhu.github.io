@@ -1209,16 +1209,14 @@ body:has(.publications-archive-page) .archive > .page__title {
   gap: 1.5rem;
 }
 
-.publication-archive-card__title {
+.publications-archive-page .publication-archive-card__title,
+.publications-archive-page a.publication-archive-card__title:hover,
+.publications-archive-page a.publication-archive-card__title:focus,
+.publications-archive-page a.publication-archive-card__title:visited {
   color: var(--home-heading) !important;
   font-size: 0.98rem;
   font-weight: 520;
   line-height: 1.4;
-}
-
-a.publication-archive-card__title:hover,
-a.publication-archive-card__title:focus {
-  color: var(--home-heading) !important;
 }
 
 .publication-archive-card__venue {
