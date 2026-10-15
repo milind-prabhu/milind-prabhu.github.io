@@ -591,6 +591,15 @@ body:has(.single-page-home) .page__footer {
   line-height: 1.5;
 }
 
+.single-page-home .hero__alignment {
+  max-width: 40rem;
+  margin-top: 0.65rem;
+  color: var(--home-muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
 .single-page-home .hero__photo {
   display: block;
   width: 100%;
