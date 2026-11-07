@@ -164,13 +164,13 @@ redirect_from:
           <h3 class="column-label" id="balancing-papers-title">Load balancing</h3>
           <ol class="paper-list">
             <li>
-              <a class="paper-title" href="https://arxiv.org/pdf/2604.04159">Online Graph Balancing and the Power of Two Choices</a>
-              <span class="paper-meta">FOCS 2026</span>
+              <a class="paper-title" href="https://arxiv.org/pdf/2609.21348">The Cube-Root Phenomenon in Online Carpooling</a>
+              <span class="paper-meta">ITCS 2027</span>
               <span class="paper-authors">with <a href="https://bansal.engin.umich.edu/">Nikhil Bansal</a>, <a href="https://faculty.cc.gatech.edu/~ssingla7/">Sahil Singla</a>, and <a href="https://aco.gatech.edu/users/siddharth-sundaram">Siddharth M. Sundaram</a></span>
             </li>
             <li>
-              <a class="paper-title" href="https://arxiv.org/pdf/2609.21348">The Cube-Root Phenomenon in Online Carpooling</a>
-              <span class="paper-meta">Preprint 2026</span>
+              <a class="paper-title" href="https://arxiv.org/pdf/2604.04159">Online Graph Balancing and the Power of Two Choices</a>
+              <span class="paper-meta">FOCS 2026</span>
               <span class="paper-authors">with <a href="https://bansal.engin.umich.edu/">Nikhil Bansal</a>, <a href="https://faculty.cc.gatech.edu/~ssingla7/">Sahil Singla</a>, and <a href="https://aco.gatech.edu/users/siddharth-sundaram">Siddharth M. Sundaram</a></span>
             </li>
             <li>

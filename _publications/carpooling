@@ -1,7 +1,9 @@
 ---
 title: "The Cube-Root Phenomenon in Online Carpooling"
-collection: preprints
-date: 2026-09-18
+collection: publications
+venue: 'ITCS'
+venue_display: 'ITCS 2027'
+date: 2027-01-01
 citation: 'Nikhil Bansal, Sahil Singla, Siddharth M. Sundaram'
 paperurl: 'https://arxiv.org/pdf/2609.21348'
 summary: >-
