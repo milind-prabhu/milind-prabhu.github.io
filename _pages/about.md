@@ -143,7 +143,7 @@ redirect_from:
           <h3 class="column-label" id="compression-papers-title">Data compression</h3>
           <ol class="paper-list">
             <li>
-              <span class="paper-title">Coresets for Capacitated Clustering via Dual Concentration</span>
+              <a class="paper-title" href="https://arxiv.org/abs/2611.09600">Coresets for Capacitated Clustering via Dual Concentration</a>
               <span class="paper-meta">SODA 2027</span>
               <span class="paper-authors">with <a href="https://cs.au.dk/~schwiegelshohn/">Chris Schwiegelshohn</a>, <a href="https://sudarshanshy.github.io/">Sudarshan Shyam</a>, and <a href="https://sites.google.com/site/erikwaing/home">Erik Waingarten</a></span>
             </li>
