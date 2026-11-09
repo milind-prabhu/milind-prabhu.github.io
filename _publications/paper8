@@ -5,4 +5,6 @@ venue: 'SODA'
 date: 2027-01-01
 citation: 'Chris Schwiegelshohn, Sudarshan Shyam, Erik Waingarten'
 paperurl: 'https://arxiv.org/abs/2611.09600'
+summary: >-
+  Coresets compress large clustering datasets into small weighted summaries, but capacity constraints make natural sampling algorithms difficult to analyze. Using the dual linear program for capacitated clustering, we obtain tight coreset bounds in finite metric spaces and the first dimension-independent bound in Euclidean space.
 ---
