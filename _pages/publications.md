@@ -53,7 +53,7 @@ under_submission:
 
   <header class="publications-archive__intro">
     <h1>All publications</h1>
-    <p>Research papers and preprints, newest first.</p>
+    <p>Research papers and preprints, newest first. Authors are listed alphabetically.</p>
   </header>
 
   {% assign all_papers = site.publications | concat: site.preprints | sort: 'date' | reverse %}
