@@ -21,6 +21,11 @@ author_links:
   "Kunal Agrawal": "https://www.cse.wustl.edu/~kunal/"
   "Owen Druzgal": "https://www.linkedin.com/in/owen-druzgal-b00b872a8"
   "Jinhao Zhao": "https://www.moeheart.cn/"
+  "Aditya Anand": "https://sites.google.com/view/aditya-anand17/home"
+  "Jonathan Conroy": "https://jonathan-conroy.github.io/"
+  "Ian DeHaan": "https://ian.how/"
+  "Gary Hoppenworth": "https://garytho.github.io/"
+  "Chaitanya Nalam": "https://nalamchaitanya.github.io/"
 under_submission:
   - title: "Compress, Solve, and Lift: Coresets for Fair Division"
     citation: "Sudarshan Shyam"
