@@ -31,7 +31,7 @@ redirect_from:
         <h1>Milind Prabhu</h1>
         <p class="hero__meta">PhD Candidate <a href="https://theory.engin.umich.edu/">@UMich</a>, advised by <a href="https://bansal.engin.umich.edu/">Nikhil Bansal</a>.</p>
         <p class="hero__copy">I design algorithms for big data.</p>
-        <p class="hero__alignment">Recently, I have also been thinking about AI alignment and am currently attending the <a href="https://www.iliad.ac/intensive">ILIAD Intensive</a> in the Bay Area.</p>
+        <p class="hero__alignment">Recently, I have been exploring AI alignment. I attended the <a href="https://www.iliad.ac/intensive">ILIAD Intensive</a> in the Bay Area and will return in January 2027 for the ILIAD Fellowship.</p>
       </div>
       <div class="hero__portrait">
         <img class="hero__photo" src="{{ '/images/milind-green.webp' | relative_url }}" alt="Portrait of Milind Prabhu">
