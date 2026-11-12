@@ -21,6 +21,13 @@ author_links:
   "Kunal Agrawal": "https://www.cse.wustl.edu/~kunal/"
   "Owen Druzgal": "https://www.linkedin.com/in/owen-druzgal-b00b872a8"
   "Jinhao Zhao": "https://www.moeheart.cn/"
+under_submission:
+  - title: "Compress, Solve, and Lift: Coresets for Fair Division"
+    citation: "Sudarshan Shyam"
+  - title: "A $(4m - 5)$-Competitive Deterministic Algorithm for Online Transportation"
+    citation: "Aditya Anand, Jonathan Conroy, Ian DeHaan, Gary Hoppenworth, Chaitanya Nalam"
+  - title: "The Price of Capacities for Clustering Coresets"
+    citation: "Chris Schwiegelshohn, Sudarshan Shyam"
 ---
 
 <script>
@@ -94,6 +101,28 @@ author_links:
       </li>
     {% endfor %}
   </ol>
+
+  <section class="publications-archive__submissions" aria-labelledby="under-submission-title">
+    <h2 id="under-submission-title">Under submission</h2>
+    <ol class="publications-archive__list">
+      {% for paper in page.under_submission %}
+        <li class="publication-archive-card">
+          <div class="publication-archive-card__header">
+            <span class="publication-archive-card__title">{{ paper.title }}</span>
+            <span class="publication-archive-card__venue">In submission</span>
+          </div>
+
+          {% assign authors = paper.citation | split: ', ' %}
+          <p class="publication-archive-card__authors">with
+            {% for author in authors %}
+              {% assign author_url = page.author_links[author] %}
+              {% if author_url %}<a href="{{ author_url }}">{{ author }}</a>{% else %}{{ author }}{% endif %}{% unless forloop.last %}{% if forloop.length == 2 %} and {% elsif forloop.rindex == 2 %}, and {% else %}, {% endif %}{% endunless %}
+            {% endfor %}
+          </p>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
 </div>
 
 <script>

@@ -1198,6 +1198,21 @@ body:has(.publications-archive-page) .archive > .page__title {
   list-style: none;
 }
 
+.publications-archive__submissions {
+  margin-top: 2.75rem;
+}
+
+.publications-archive__submissions h2 {
+  margin: 0 0 0.9rem;
+  padding: 0;
+  border: 0;
+  color: var(--home-heading);
+  font-size: 1.25rem;
+  font-weight: 520;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
 .publication-archive-card {
   padding: 1.1rem 1.2rem;
   border-radius: 0.8rem;
