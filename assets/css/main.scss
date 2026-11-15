@@ -1087,6 +1087,7 @@ body:has(.single-page-home) .page__footer {
 body:has(.contact-page) .masthead,
 body:has(.contact-page) .greedy-nav,
 body:has(.contact-page) #site-nav,
+body:has(.contact-page) .page__footer,
 body:has(.contact-page) .archive > .page__title {
   display: none;
 }
