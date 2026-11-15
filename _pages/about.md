@@ -39,7 +39,6 @@ redirect_from:
           <a href="{{ '/files/resume.pdf' | relative_url }}" aria-label="Résumé" title="Résumé"><i class="fas fa-file-alt" aria-hidden="true"></i></a>
           <a href="https://scholar.google.com/citations?user=vu73GNIAAAAJ&amp;hl=en&amp;oi=ao" aria-label="Google Scholar" title="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
           <a href="mailto:milindpr@umich.edu" aria-label="Email" title="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-          <a href="{{ '/contact/' | relative_url }}" aria-label="Availability" title="Availability"><i class="fas fa-calendar-alt" aria-hidden="true"></i></a>
         </nav>
       </div>
     </section>
