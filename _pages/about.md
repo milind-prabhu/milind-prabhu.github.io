@@ -148,7 +148,7 @@ redirect_from:
               <span class="paper-authors">with <a href="https://cs.au.dk/~schwiegelshohn/">Chris Schwiegelshohn</a>, <a href="https://sudarshanshy.github.io/">Sudarshan Shyam</a>, and <a href="https://sites.google.com/site/erikwaing/home">Erik Waingarten</a></span>
             </li>
             <li>
-              <span class="paper-title">Fault Tolerant Coresets</span>
+              <a class="paper-title" href="https://arxiv.org/abs/2611.17574">Fault Tolerant Coresets</a>
               <span class="paper-meta">NeurIPS 2026</span>
               <span class="paper-authors">with <a href="https://cs.au.dk/~schwiegelshohn/">Chris Schwiegelshohn</a> and <a href="https://sudarshanshy.github.io/">Sudarshan Shyam</a></span>
             </li>
