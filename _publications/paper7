@@ -5,6 +5,8 @@ venue: 'NeurIPS'
 date: 2026-12-01
 citation: 'Chris Schwiegelshohn, Sudarshan Shyam'
 paperurl: 'https://arxiv.org/abs/2611.17574'
+leanurl: 'https://github.com/sudarshanshy/fault-tolerant-coresets-lean'
 summary: >-
   Coresets compress large datasets into small weighted summaries, but standard constructions assume the summary remains intact during storage and transmission. We show that sensitivity sampling yields coresets that can recover from up to $f$ adversarial corruptions with only an additive $O(fk/\varepsilon)$ size overhead for $k$-means, and prove that this dependence is optimal.
 ---
+
