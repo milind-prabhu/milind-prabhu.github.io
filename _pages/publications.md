@@ -89,14 +89,14 @@ under_submission:
 
         {% if paper.paperurl or paper.leanurl or paper.summary %}
           <div class="paper-actions">
+            {% if paper.summary %}
+              <button class="paper-summary-toggle" type="button" aria-expanded="false" aria-controls="publication-summary-{{ forloop.index }}"><span class="paper-summary-toggle__icon" aria-hidden="true">+</span> TL;DR</button>
+            {% endif %}
             {% if paper.paperurl %}
               <a class="paper-link" href="{{ paper.paperurl }}" aria-label="View on arXiv"><i class="ai ai-arxiv" aria-hidden="true"></i><span>arXiv</span></a>
             {% endif %}
             {% if paper.leanurl %}
               <a class="paper-link paper-link--lean" href="{{ paper.leanurl }}" aria-label="View Lean formalization on GitHub"><i class="fab fa-github" aria-hidden="true"></i><span>Lean</span></a>
-            {% endif %}
-            {% if paper.summary %}
-              <button class="paper-summary-toggle" type="button" aria-expanded="false" aria-controls="publication-summary-{{ forloop.index }}"><span class="paper-summary-toggle__icon" aria-hidden="true">+</span> Summary</button>
             {% endif %}
           </div>
         {% endif %}
