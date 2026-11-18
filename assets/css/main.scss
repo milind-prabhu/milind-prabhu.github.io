@@ -974,7 +974,8 @@ body:has(.single-page-home) .page__footer {
   gap: 0.3rem;
 }
 
-.paper-link .ai-arxiv {
+.paper-link .ai-arxiv,
+.paper-link .fa-github {
   font-size: 1rem;
   line-height: 1;
 }
