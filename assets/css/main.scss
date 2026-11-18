@@ -968,6 +968,17 @@ body:has(.single-page-home) .page__footer {
   font-weight: 500;
 }
 
+.paper-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.paper-link .ai-arxiv {
+  font-size: 1rem;
+  line-height: 1;
+}
+
 .paper-summary-toggle {
   display: inline-flex;
   align-items: center;
@@ -1272,3 +1283,4 @@ body:has(.publications-archive-page) .archive > .page__title {
     gap: 0.3rem;
   }
 }
+
